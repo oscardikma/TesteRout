@@ -3,7 +3,7 @@ import Home from './Home';
 import About from './About';
 function App() {
   return (
-    <Router>
+    <Router basename="/TesteRout">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
