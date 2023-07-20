@@ -4,10 +4,10 @@ import About from './About';
 function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
-      <Routes>
+    <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-      </Routes>
+      <Route path="/About" element={<About />} />
+    </Routes>
       <a href="./">home</a> <br/>
       <a href="./About">about</a>
     </Router>
