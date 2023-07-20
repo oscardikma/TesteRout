@@ -3,10 +3,10 @@ import Home from './Home';
 import About from './About';
 function App() {
   return (
-    <Router basename={'TesteRout/'}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="About" element={<About />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </Router>
   );
